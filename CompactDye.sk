@@ -1,0 +1,440 @@
+options:
+	SuccesMessage: &7Your dyes have been compacted!
+	ErrorMessageForCompact: &7Sorry .. you don't have 64 dye
+	ErrorMessageForUncompacted: &7Sorry.. You don't have 2 compacted Dye !
+	
+	CommandNameForDecompact: uncompacted
+	CommandNameForCompact: compact
+
+	NameOfCompactItemForWhiteDye: &7Compacted White Dye
+	NameOfCompactItemForOrangeDye: &7Compacted Orange Dye
+	NameOfCompactItemForMagentaDye: &7Compacted Magenta Dye
+	NameOfCompactItemForLightBlueDye: &7Compacted Light Blue Dye
+	NameOfCompactItemForYellowDye: &7Compacted Yellow Dye
+	NameOfCompactItemForLimeDye: &7Compacted Lime Dye
+	NameOfCompactItemForPinkDye: &7Compacted Pink Dye
+	NameOfCompactItemForGrayDye: &7Compacted Gray Dye
+	NameOfCompactItemForLightGrayDye: &7Compacted Light Gray Dye
+	NameOfCompactItemForCyanDye: &7Compacted Cyan Dye
+	NameOfCompactItemForPurpleDye: &7Compacted Purple Dye
+	NameOfCompactItemForBlueDye: &7Compacted Blue Dye
+	NameOfCompactItemForBrownDye: &7Compacted Brown Dye
+	NameOfCompactItemForGreenDye: &7Compacted Green Dye
+	NameOfCompactItemForRedDye: &7Compacted Red Dye
+	NameOfCompactItemForBlackDye: &7Compacted Black Dye
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+command /{@CommandNameForDecompact} [<text>]:
+	trigger:
+		if arg 1 is not set:
+			send "&b=========="
+			send ""
+			send "&cUsage:"
+			send "&7/{@CommandNameForDecompact} &8white/orange/magenta/lightblue/yellow ..."
+			send ""		
+			send "&b=========="
+	
+		if arg 1 is "white":
+			if player has 2 white dye named "{@NameOfCompactItemForWhiteDye}":
+				remove 2 white dye named "{@NameOfCompactItemForWhiteDye}" from player's inventory
+				give player 64 of white dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+		if arg 1 is "orange":
+			if player has 2 orange dye named "{@NameOfCompactItemForOrangeDye}":
+				remove 2 orange dye named "{@NameOfCompactItemForOrangeDye}" from player's inventory
+				give player 64 of orange dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+		
+		if arg 1 is "magenta":
+			if player has 2 magenta dye named "{@NameOfCompactItemForMagentaDye}":
+				remove 2 magenta dye named "{@NameOfCompactItemForMagentaDye}" from player's inventory
+				give player 64 of magenta dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+		
+		if arg 1 is "lightBlue":
+			if player has 2 light blue dye named "{@NameOfCompactItemForLightBlueDye}":
+				remove 2 light blue dye named "{@NameOfCompactItemForLightBlueDye}" from player's inventory
+				give player 64 of light blue dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+		
+		if arg 1 is "yellow":
+			if player has 2 yellow dye named "{@NameOfCompactItemForYellowDye}":
+				remove 2 yellow dye named "{@NameOfCompactItemForYellowDye}" from player's inventory
+				give player 64 of yellow dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+		
+		if arg 1 is "lime":
+			if player has 2 lime dye named "{@NameOfCompactItemForLimeDye}":
+				remove 2 lime dye named "{@NameOfCompactItemForLimeDye}" from player's inventory
+				give player 64 of lime dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+		
+		if arg 1 is "pink":
+			if player has 2 pink dye named "{@NameOfCompactItemForPinkDye}":
+				remove 2 pink dye named "{@NameOfCompactItemForPinkDye}" from player's inventory
+				give player 64 of pink dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+
+		if arg 1 is "gray":
+			if player has 2 gray dye named "{@NameOfCompactItemForGrayDye}":
+				remove 2 gray dye named "{@NameOfCompactItemForGrayDye}" from player's inventory
+				give player 64 of gray dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+			
+		
+		if arg 1 is "lightGray":
+			if player has 2 light gray dye named "{@NameOfCompactItemForLightGrayDye}":
+				remove 2 light gray dye named "{@NameOfCompactItemForLightGrayDye}" from player's inventory
+				give player 64 of light gray dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+		
+		if arg 1 is "cyan":
+			if player has 2 cyan dye named "{@NameOfCompactItemForCyanDye}":
+				remove 2 cyan dye named "{@NameOfCompactItemForCyanDye}" from player's inventory
+				give player 64 of cyan dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+		
+		if arg 1 is "purple":
+			if player has 2 purple dye named "{@NameOfCompactItemForPurpleDye}":
+				remove 2 purple dye named "{@NameOfCompactItemForPurpleDye}" from player's inventory
+				give player 64 of purple dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+		
+		if arg 1 is "blue":
+			if player has 2 blue dye named "{@NameOfCompactItemForBlueDye}":
+				remove 2 blue dye named "{@NameOfCompactItemForBlueDye}" from player's inventory
+				give player 64 of blue dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+		
+		if arg 1 is "brown":
+			if player has 2 brown dye named "{@NameOfCompactItemForBrownDye}":
+				remove 2 brown dye named "{@NameOfCompactItemForBrownDye}" from player's inventory
+				give player 64 of brown dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+		
+		if arg 1 is "green":
+			if player has 2 green dye named "{@NameOfCompactItemForGreenDye}":
+				remove 2 green dye named "{@NameOfCompactItemForGreenDye}" from player's inventory
+				give player 64 of green dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+		
+		if arg 1 is "red":
+			if player has 2 red dye named "{@NameOfCompactItemForRedDye}":
+				remove 2 red dye named "{@NameOfCompactItemForRedDye}" from player's inventory
+				give player 64 of Red dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+
+		if arg 1 is "black":
+			if player has 2 black dye named "{@NameOfCompactItemForBlackDye}":
+				remove 2 black dye named "{@NameOfCompactItemForBlackDye}" from player's inventory
+				give player 64 of Black dye
+			else:
+				send "{@ErrorMessageForUncompacted}" to player
+				stop
+
+
+command /{@CommandNameForCompact} [<text>]:
+	trigger:
+		if arg 1 is "white":
+			if player has 64 white dye named "":
+				remove 64 white dye named "" from player's inventory
+				give player 2 of white dye named "{@NameOfCompactItemForWhiteDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 white dye named "":
+					remove 64 white dye named "" from player's inventory
+					give player 2 of white dye named "{@NameOfCompactItemForWhiteDye}"
+				else:
+					exit loop
+		if arg 1 is "orange":
+			if player has 64 orange dye named "":
+				remove 64 orange dye named "" from player's inventory
+				give player 2 of orange dye named "{@NameOfCompactItemForOrangeDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 orange dye named "":
+					remove 64 orange dye named "" from player's inventory
+					give player 2 of orange dye named "{@NameOfCompactItemForOrangeDye}"
+				else:
+					exit loop
+		if arg 1 is "magenta":
+			if player has 64 magenta dye named "":
+				remove 64 magenta dye named "" from player's inventory
+				give player 2 of magenta dye named "{@NameOfCompactItemForMagentaDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 magenta dye named "":
+					remove 64 magenta dye named "" from player's inventory
+					give player 2 of magenta dye named "{@NameOfCompactItemForMagentaDye}"
+				else:
+					exit loop
+		if arg 1 is "lightblue":
+			if player has 64 light blue dye named "":
+				remove 64 light blue dye named "" from player's inventory
+				give player 2 of light blue dye named "{@NameOfCompactItemForLightBlueDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 light blue dye named "":
+					remove 64 light blue dye named "" from player's inventory
+					give player 2 of light blue dye named "{@NameOfCompactItemForLightBlueDye}"
+				else:
+					exit loop
+		if arg 1 is "yellow":
+			if player has 64 yellow dye named "":
+				remove 64 yellow dye named "" from player's inventory
+				give player 2 of yellow dye named "{@NameOfCompactItemForYellowDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 yellow dye named "":
+					remove 64 yellow dye named "" from player's inventory
+					give player 2 of yellow dye named "{@NameOfCompactItemForYellowDye}"
+				else:
+					exit loop
+		if arg 1 is "lime":
+			if player has 64 lime dye named "":
+				remove 64 lime dye named "" from player's inventory
+				give player 2 of lime dye named "{@NameOfCompactItemForLimeDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 lime dye named "":
+					remove 64 lime dye named "" from player's inventory
+					give player 2 of lime dye named "{@NameOfCompactItemForLimeDye}"
+				else:
+					exit loop
+		if arg 1 is "pink":
+			if player has 64 pink dye named "":
+				remove 64 pink dye named "" from player's inventory
+				give player 2 of pink dye named "{@NameOfCompactItemForPinkDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 pink dye named "":
+					remove 64 pink dye named "" from player's inventory
+					give player 2 of pink dye named "{@NameOfCompactItemForPinkDye}"
+				else:
+					exit loop
+		if arg 1 is "gray":
+			if player has 64 gray dye named "":
+				remove 64 gray dye named "" from player's inventory
+				give player 2 of gray dye named "{@NameOfCompactItemForGrayDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 gray dye named "":
+					remove 64 gray dye named "" from player's inventory
+					give player 2 of gray dye named "{@NameOfCompactItemForGrayDye}"
+				else:
+					exit loop
+		if arg 1 is "lightgray":
+			if player has 64 light gray dye named "":
+				remove 64 light gray dye named "" from player's inventory
+				give player 2 of light gray dye named "{@NameOfCompactItemForLightGrayDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 light gray dye named "":
+					remove 64 light gray dye named "" from player's inventory
+					give player 2 of light gray dye named "{@NameOfCompactItemForLightGrayDye}"
+				else:
+					exit loop
+		if arg 1 is "cyan":
+			if player has 64 cyan dye named "":
+				remove 64 cyan dye named "" from player's inventory
+				give player 2 of cyan dye named "{@NameOfCompactItemForCyanDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 cyan dye named "":
+					remove 64 cyan dye named "" from player's inventory
+					give player 2 of cyan dye named "{@NameOfCompactItemForCyanDye}"
+				else:
+					exit loop
+		if arg 1 is "purple":
+			if player has 64 purple dye named "":
+				remove 64 purple dye named "" from player's inventory
+				give player 2 of purple dye named "{@NameOfCompactItemForPurpleDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 purple dye named "":
+					remove 64 purple dye named "" from player's inventory
+					give player 2 of purple dye named "{@NameOfCompactItemForPurpleDye}"
+				else:
+					exit loop
+		if arg 1 is "blue":
+			if player has 64 blue dye named "":
+				remove 64 blue dye named "" from player's inventory
+				give player 2 of blue dye named "{@NameOfCompactItemForBlueDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 blue dye named "":
+					remove 64 blue dye named "" from player's inventory
+					give player 2 of blue dye named "{@NameOfCompactItemForLightBlueDye}"
+				else:
+					exit loop
+		if arg 1 is "brown":
+			if player has 64 brown dye named "":
+				remove 64 brown dye named "" from player's inventory
+				give player 2 of brown dye named "{@NameOfCompactItemForBrownDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 brown dye named "":
+					remove 64 brown dye named "" from player's inventory
+					give player 2 of brown dye named "{@NameOfCompactItemForBrownDye}"
+				else:
+					exit loop
+		if arg 1 is "green":
+			if player has 64 green dye named "":
+				remove 64 green dye named "" from player's inventory
+				give player 2 of green dye named "{@NameOfCompactItemForGreenDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 green dye named "":
+					remove 64 green dye named "" from player's inventory
+					give player 2 of green dye named "{@NameOfCompactItemForGreenDye}"
+				else:
+					exit loop
+		if arg 1 is "red":
+			if player has 64 red dye named "":
+				remove 64 red dye named "" from player's inventory
+				give player 2 of red dye named "{@NameOfCompactItemForRedDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 red dye named "":
+					remove 64 red dye named "" from player's inventory
+					give player 2 of red dye named "{@NameOfCompactItemForRedDye}"
+				else:
+					exit loop
+		if arg 1 is "black":
+			if player has 64 black dye named "":
+				remove 64 black dye named "" from player's inventory
+				give player 2 of black dye named "{@NameOfCompactItemForBlackDye}"
+			else:
+				send "{@ErrorMessageForCompact}" to player
+				stop
+			loop 35 times:
+				if player has 64 black dye named "":
+					remove 64 black dye named "" from player's inventory
+					give player 2 of black dye named "{@NameOfCompactItemForBlackDye}"
+				else:
+					exit loop
